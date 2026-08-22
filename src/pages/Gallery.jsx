@@ -224,9 +224,9 @@ export default function Gallery() {
                         <img src={folder.cover} alt={folder.uploader} className="folder-thumbnail" />
                       </div>
                       <div className="folder-info">
-                        <span className="folder-title" title={folder.uploader}>
+                        {/* <span className="folder-title" title={folder.uploader}>
                           {folder.uploader === 'Prajwala & Shravan' ? t('Prajwala Nag & Shravan Kumar') : folder.uploader}
-                        </span>
+                        </span> */}
                         <span className="folder-count">
                           {folder.count} {folder.count === 1 ? t('photo') : t('photos')}
                         </span>
@@ -273,7 +273,7 @@ export default function Gallery() {
                         </a>
 
                         {/* Delete moderation button - only for guest uploads */}
-                        {photo.uploader !== 'Prajwala & Shravan' && (
+                        {(
                           <button 
                             className="photo-delete-btn" 
                             onClick={() => handleDeletePhoto(photo)}
