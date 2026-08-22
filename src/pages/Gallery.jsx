@@ -248,9 +248,9 @@ export default function Gallery() {
                   <ArrowLeft size={16} />
                   {t('Back to Albums')}
                 </button>
-                <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', margin: 0 }}>
+                {/* <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', margin: 0 }}>
                   {t('Album: ')} {selectedFolder === 'Prajwala & Shravan' ? t('Prajwala Nag & Shravan Kumar') : selectedFolder}
-                </h2>
+                </h2> */}
                 <div style={{ width: '120px' }}></div> {/* Spacer for centering on desktop */}
               </div>
 
