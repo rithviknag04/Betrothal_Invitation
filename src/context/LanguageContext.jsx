@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import { translations } from '../translations';
+import { Globe, Heart } from 'lucide-react';
 
 const LanguageContext = createContext();
 
@@ -13,10 +14,13 @@ function decodeHtmlEntities(str) {
 
 export function LanguageProvider({ children }) {
   const [language, setLanguageState] = useState(() => {
-    return localStorage.getItem('wedding_language') || '';
+    return localStorage.getItem('wedding_language') || 'en';
   });
 
-  const [showPrompt, setShowPrompt] = useState(false);
+  // Show prompt on every fresh session visit or first load
+  const [showPrompt, setShowPrompt] = useState(() => {
+    return !sessionStorage.getItem('wedding_language_prompt_shown');
+  });
 
   // Loaded from localStorage to cache dynamically translated strings
   const [translationCache, setTranslationCache] = useState(() => {
@@ -27,16 +31,10 @@ export function LanguageProvider({ children }) {
   // Track pending translation calls in progress to avoid duplicate requests
   const pendingRequests = useRef(new Set());
 
-  useEffect(() => {
-    // If no language is selected yet, show the language selection modal prompt
-    if (!language) {
-      setShowPrompt(true);
-    }
-  }, [language]);
-
   const setLanguage = (lang) => {
     setLanguageState(lang);
     localStorage.setItem('wedding_language', lang);
+    sessionStorage.setItem('wedding_language_prompt_shown', 'true');
     setShowPrompt(false);
   };
 
@@ -127,25 +125,73 @@ export function LanguageProvider({ children }) {
     <LanguageContext.Provider value={{ language, setLanguage, t }}>
       {children}
       {showPrompt && (
-        <div className="modal-overlay" style={{ zIndex: 9999 }}>
-          <div className="modal-content-wrap glass-panel text-center animate-fade-in-scale" style={{ padding: '40px', maxWidth: '450px', width: '90%', border: '1px solid var(--border-color)' }}>
-            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', marginBottom: '8px', color: 'var(--text-accent)' }}>ಕನ್ನಡ / English</h3>
-            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.5' }}>
-              ದಯವಿಟ್ಟು ನಿಮ್ಮ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ<br />
-              Please select your preferred language
+        <div className="modal-overlay" style={{ zIndex: 9999, backdropFilter: 'blur(12px)', backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+          <div 
+            className="modal-content-wrap glass-panel text-center animate-fade-in-scale" 
+            style={{ 
+              padding: '44px 32px', 
+              maxWidth: '460px', 
+              width: '90%', 
+              border: '1px solid var(--border-color)',
+              borderRadius: '24px',
+              boxShadow: 'var(--shadow-lg)'
+            }}
+          >
+            <div style={{ display: 'inline-flex', padding: '12px', borderRadius: '50%', background: 'var(--bg-secondary)', marginBottom: '16px', color: 'var(--text-gold)' }}>
+              <Globe size={32} />
+            </div>
+
+            <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '2rem', marginBottom: '6px', color: 'var(--text-primary)' }}>
+              ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ
+            </h3>
+            <h4 style={{ fontFamily: 'var(--font-sans)', fontSize: '1.1rem', fontWeight: '500', marginBottom: '16px', color: 'var(--text-accent)' }}>
+              Select Language
+            </h4>
+
+            <div className="botanical-divider" style={{ margin: '0 auto 24px' }}>
+              <div className="botanical-line"></div>
+              <div className="botanical-icon">
+                <Heart size={14} fill="currentColor" />
+              </div>
+              <div className="botanical-line"></div>
+            </div>
+
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', marginBottom: '32px', lineHeight: '1.6' }}>
+              ನಮ್ಮ ಮದುವೆಯ ಶುಭ ಆಹ್ವಾನವನ್ನು ವೀಕ್ಷಿಸಲು ನಿಮ್ಮ ಆದ್ಯತೆಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ<br />
+              Please select your preferred language to explore our wedding invitation
             </p>
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <button 
                 className="btn-primary" 
                 onClick={() => setLanguage('kn')}
-                style={{ width: '100%', padding: '14px', fontSize: '1rem', letterSpacing: '1px', textTransform: 'none' }}
+                style={{ 
+                  width: '100%', 
+                  padding: '16px', 
+                  fontSize: '1.1rem', 
+                  letterSpacing: '0.5px', 
+                  textTransform: 'none',
+                  justifyContent: 'center',
+                  borderRadius: '16px',
+                  fontWeight: '600'
+                }}
               >
                 ಕನ್ನಡ (Kannada)
               </button>
+
               <button 
                 className="btn-secondary" 
                 onClick={() => setLanguage('en')}
-                style={{ width: '100%', padding: '14px', fontSize: '1rem', letterSpacing: '1px', textTransform: 'none' }}
+                style={{ 
+                  width: '100%', 
+                  padding: '16px', 
+                  fontSize: '1.1rem', 
+                  letterSpacing: '0.5px', 
+                  textTransform: 'none',
+                  justifyContent: 'center',
+                  borderRadius: '16px',
+                  fontWeight: '600'
+                }}
               >
                 English
               </button>

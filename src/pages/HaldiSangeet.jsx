@@ -16,7 +16,8 @@ export default function HaldiSangeet() {
             {t('Back to Calendar')}
           </Link>
           <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('Haldi & Sangeet Ceremonies')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '4px' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-date" style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('December 12th, 2026')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -27,43 +28,9 @@ export default function HaldiSangeet() {
         </div>
       </section>
 
-      <section className="haldi-countdown-section" style={{ padding: '20px 0' }}>
-        <div className="container" style={{ maxWidth: '600px' }}>
-          <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Haldi & Sangeet')}</span>
-            <Countdown targetDate="2026-12-12T10:00:00" />
-          </div>
-        </div>
-      </section>
-
-      <section className="events-grid-section" style={{ padding: '40px 0 80px' }}>
+      <section className="events-grid-section" style={{ padding: '40px 0 40px' }}>
         <div className="container">
           <div className="grid-2">
-            
-            {/* Date & Time */}
-            <div className="details-card glass-panel">
-              <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('Date & Time')}</h2>
-              </div>
-              <div className="schedule-list">
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>10:00 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Haldi Ceremony')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('A joyful turmeric paste-applying ritual with pure traditional vibes.')}</p>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>06:00 PM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Sangeet Ceremony & Gala Dinner')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('Choreographed dance performances, music, and a celebratory feast.')}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* The Venue */}
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -141,6 +108,15 @@ export default function HaldiSangeet() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section className="haldi-countdown-section" style={{ padding: '20px 0 80px' }}>
+        <div className="container" style={{ maxWidth: '600px' }}>
+          <div className="glass-panel text-center countdown-wrap-card">
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Haldi & Sangeet')}</span>
+            <Countdown targetDate="2026-12-12T10:00:00" />
           </div>
         </div>
       </section>

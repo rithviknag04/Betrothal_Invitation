@@ -26,6 +26,7 @@ export const translations = {
 
     // Wedding Page
     'The Wedding Celebration': 'ವಿವಾಹ ಮಹೋತ್ಸವ',
+    'December 13th & 14th, 2026': 'ಡಿಸೆಂಬರ್ ೧೩ ಮತ್ತು ೧೪, ೨೦೨೬',
     'Countdown to the Big Day': 'ಮದುವೆಗೆ ಉಳಿದಿರುವ ಸಮಯ',
     'Back to Welcome': 'ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ',
     'Date & Time': 'ದಿನಾಂಕ ಮತ್ತು ಸಮಯ',
@@ -58,6 +59,8 @@ export const translations = {
     // Engagement Page
     'The Engagement Ceremony': 'ನಿಶ್ಚಿತಾರ್ಥ ಸಮಾರಂಭ',
     'Countdown to the Engagement': 'ನಿಶ್ಚಿತಾರ್ಥಕ್ಕೆ ಉಳಿದಿರುವ ಸಮಯ',
+    'Click to view English Invitation': 'ಇಂಗ್ಲಿಷ್ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
+    'Click to view Kannada Invitation': 'ಕನ್ನಡ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
     'Ring Ceremony & Exchange of Vows': 'ಉಂಗುರ ಬದಲಾಯಿಸುವಿಕೆ ಮತ್ತು ಪ್ರಮಾಣ ವಚನ',
     'The couple will exchange rings in the presence of family and friends.': 'ಕುಟುಂಬಸ್ಥರು ಮತ್ತು ಸ್ನೇಹಿತರ ಸಮ್ಮುಖದಲ್ಲಿ ದಂಪತಿಗಳು ಉಂಗುರವನ್ನು ಬದಲಾಯಿಸಿಕೊಳ್ಳುತ್ತಾರೆ.',
     'Lunch & Celebrations': 'ಮಧ್ಯಾಹ್ನದ ಔತಣಕೂಟ ಮತ್ತು ಶುಭ ಹಾರೈಕೆಗಳು',
@@ -90,6 +93,7 @@ export const translations = {
 
     // Haldi & Sangeet Page
     'Haldi & Sangeet Ceremonies': 'ಹಳದಿ ಮತ್ತು ಸಂಗೀತ ಸಂಭ್ರಮ',
+    'December 12th, 2026': 'ಡಿಸೆಂಬರ್ ೧೨, ೨೦೨೬',
     'Countdown to Haldi & Sangeet': 'ಹಳದಿ ಮತ್ತು ಸಂಗೀತಕ್ಕೆ ಉಳಿದಿರುವ ಸಮಯ',
     'Haldi Ceremony': 'ಹಳದಿ ಶಾಸ್ತ್ರ',
     'A joyful turmeric paste-applying ritual with pure traditional vibes.': 'ನಮ್ಮ ಸಾಂಪ್ರದಾಯಿಕ ಹಳದಿ ಹಚ್ಚುವ ಮಂಗಳಕರ ಶಾಸ್ತ್ರದ ಮಂಗಳ ಹಾಡು ಮತ್ತು ಸಂಭ್ರಮ.',

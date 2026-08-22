@@ -16,7 +16,8 @@ export default function Mehendi() {
             {t('Back to Calendar')}
           </Link>
           <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('The Mehendi Ceremony')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '4px' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-date" style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('December 11th, 2026')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -27,34 +28,9 @@ export default function Mehendi() {
         </div>
       </section>
 
-      <section className="mehendi-countdown-section" style={{ padding: '20px 0' }}>
-        <div className="container" style={{ maxWidth: '600px' }}>
-          <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Mehendi')}</span>
-            <Countdown targetDate="2026-12-11T18:00:00" />
-          </div>
-        </div>
-      </section>
-
-      <section className="events-grid-section" style={{ padding: '40px 0 80px' }}>
+      <section className="events-grid-section" style={{ padding: '40px 0 40px' }}>
         <div className="container">
           <div className="grid-2">
-            
-            {/* Date & Time */}
-            <div className="details-card glass-panel">
-              <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('Date & Time')}</h2>
-              </div>
-              <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('December 11th, 2026')}</h3>
-                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('6:00 PM Onwards')}</p>
-                <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                  {t('Kickstarting the wedding celebrations with a colorful evening filled with intricate henna designs, folk music, and delicious appetizers.')}
-                </p>
-              </div>
-            </div>
-
             {/* The Venue */}
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -132,6 +108,15 @@ export default function Mehendi() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      <section className="mehendi-countdown-section" style={{ padding: '20px 0 80px' }}>
+        <div className="container" style={{ maxWidth: '600px' }}>
+          <div className="glass-panel text-center countdown-wrap-card">
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Mehendi')}</span>
+            <Countdown targetDate="2026-12-11T18:00:00" />
           </div>
         </div>
       </section>

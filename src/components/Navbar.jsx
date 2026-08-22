@@ -20,9 +20,9 @@ export default function Navbar() {
             <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
               {t('Home')}
             </NavLink>
-            <NavLink to="/story" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+            {/* <NavLink to="/story" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
               {t('Our Story')}
-            </NavLink>
+            </NavLink> */}
             <NavLink to="/gallery" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
               {t('Gallery')}
             </NavLink>

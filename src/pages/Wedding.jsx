@@ -16,7 +16,8 @@ export default function Wedding() {
             {t('Back to Welcome')}
           </Link>
           <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('The Wedding Celebration')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)', marginBottom: '4px' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
+          <p className="page-date" style={{ fontSize: '1.1rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('December 13th & 14th, 2026')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -27,56 +28,9 @@ export default function Wedding() {
         </div>
       </section>
 
-      <section className="wedding-countdown-section" style={{ padding: '20px 0' }}>
-        <div className="container" style={{ maxWidth: '600px' }}>
-          <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to the Big Day')}</span>
-            <Countdown targetDate="2026-12-13T19:00:00" />
-          </div>
-        </div>
-      </section>
-
-      <section className="events-grid-section" style={{ padding: '40px 0 80px' }}>
+      <section className="events-grid-section" style={{ padding: '40px 0 40px' }}>
         <div className="container">
           <div className="grid-2">
-            {/* The Details */}
-            <div className="details-card glass-panel">
-              <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('Date & Time')}</h2>
-              </div>
-              <div className="schedule-list">
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>Dec 11</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Mehendi Ceremony')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('6:00 PM onwards — Henna, music, and celebrations.')}</p>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>Dec 12</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Haldi & Sangeet Night')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('10:00 AM (Haldi) & 6:00 PM (Sangeet dance performances).')}</p>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>Dec 13</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Wedding & Reception')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('Sacred Muhurtham rituals followed by reception dinner.')}</p>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>Dec 14</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Blessings & Lunch')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('Gala lunch gathering to bless the newlywed couple.')}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* The Venue */}
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -153,6 +107,15 @@ export default function Wedding() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="wedding-countdown-section" style={{ padding: '20px 0 80px' }}>
+        <div className="container" style={{ maxWidth: '600px' }}>
+          <div className="glass-panel text-center countdown-wrap-card">
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to the Big Day')}</span>
+            <Countdown targetDate="2026-12-13T19:00:00" />
           </div>
         </div>
       </section>

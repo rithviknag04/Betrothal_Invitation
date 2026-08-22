@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import coupleHero from '../assets/couple_hero.png';
+import coupleHero from '../assets/prajju_and_shravan_sketch.png';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -31,9 +31,9 @@ export default function Home() {
               <Link to="/engagement" className="btn-primary">
                 {t('Engagement')}
               </Link>
-              <Link to="/wedding" className="btn-secondary">
+              {/* <Link to="/wedding" className="btn-secondary">
                 {t('Wedding')}
-              </Link>
+              </Link> */}
             </div>
           </div>
           
