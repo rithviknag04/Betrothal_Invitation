@@ -1,38 +1,6 @@
 import React, { useState } from 'react';
 import { Heart, Upload, X, Camera, RefreshCw, Trash2, ArrowLeft, Plus, Download } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-// import coupleHero from '../assets/couple_hero.png';
-// import galleryRing from '../assets/gallery_ring.png';
-// import galleryVenue from '../assets/gallery_venue.png';
-// import galleryDetails from '../assets/gallery_details.png';
-
-// const initialPhotos = [
-//   {
-//     src: coupleHero,
-//     uploader: 'Prajwala & Shravan',
-//     title: 'Prajwala & Shravan',
-//     desc: 'Shared moments of love and joy.',
-//   },
-//   {
-//     src: galleryRing,
-//     uploader: 'Prajwala & Shravan',
-//     title: 'The Engagement',
-//     desc: 'The beautiful start of our forever.',
-//   },
-//   {
-//     src: galleryVenue,
-//     uploader: 'Prajwala & Shravan',
-//     title: 'Our Venue',
-//     desc: 'Where we will say our vows.',
-//   },
-//   {
-//     src: galleryDetails,
-//     uploader: 'Prajwala & Shravan',
-//     title: 'The Table Details',
-//     desc: 'Setting the scene for our celebration.',
-//   },
-// ];
-
 export default function Gallery() {
   const { t } = useLanguage();
 
@@ -50,7 +18,7 @@ export default function Gallery() {
         console.error("Failed to load saved gallery photos", e);
       }
     }
-    return initialPhotos;
+    return [];
   });
 
   const [selectedFolder, setSelectedFolder] = useState(null);
