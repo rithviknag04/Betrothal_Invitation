@@ -6,32 +6,32 @@ import galleryRing from '../assets/gallery_ring.png';
 import galleryVenue from '../assets/gallery_venue.png';
 import galleryDetails from '../assets/gallery_details.png';
 
-const initialPhotos = [
-  {
-    src: coupleHero,
-    uploader: 'Prajwala & Shravan',
-    title: 'Prajwala & Shravan',
-    desc: 'Shared moments of love and joy.',
-  },
-  {
-    src: galleryRing,
-    uploader: 'Prajwala & Shravan',
-    title: 'The Engagement',
-    desc: 'The beautiful start of our forever.',
-  },
-  {
-    src: galleryVenue,
-    uploader: 'Prajwala & Shravan',
-    title: 'Our Venue',
-    desc: 'Where we will say our vows.',
-  },
-  {
-    src: galleryDetails,
-    uploader: 'Prajwala & Shravan',
-    title: 'The Table Details',
-    desc: 'Setting the scene for our celebration.',
-  },
-];
+// const initialPhotos = [
+//   {
+//     src: coupleHero,
+//     uploader: 'Prajwala & Shravan',
+//     title: 'Prajwala & Shravan',
+//     desc: 'Shared moments of love and joy.',
+//   },
+//   {
+//     src: galleryRing,
+//     uploader: 'Prajwala & Shravan',
+//     title: 'The Engagement',
+//     desc: 'The beautiful start of our forever.',
+//   },
+//   {
+//     src: galleryVenue,
+//     uploader: 'Prajwala & Shravan',
+//     title: 'Our Venue',
+//     desc: 'Where we will say our vows.',
+//   },
+//   {
+//     src: galleryDetails,
+//     uploader: 'Prajwala & Shravan',
+//     title: 'The Table Details',
+//     desc: 'Setting the scene for our celebration.',
+//   },
+// ];
 
 export default function Gallery() {
   const { t } = useLanguage();
