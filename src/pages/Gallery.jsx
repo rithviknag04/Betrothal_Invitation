@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Heart, Upload, X, Camera, RefreshCw, Trash2, ArrowLeft, Plus, Download } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import coupleHero from '../assets/couple_hero.png';
-import galleryRing from '../assets/gallery_ring.png';
-import galleryVenue from '../assets/gallery_venue.png';
-import galleryDetails from '../assets/gallery_details.png';
+// import coupleHero from '../assets/couple_hero.png';
+// import galleryRing from '../assets/gallery_ring.png';
+// import galleryVenue from '../assets/gallery_venue.png';
+// import galleryDetails from '../assets/gallery_details.png';
 
 // const initialPhotos = [
 //   {
