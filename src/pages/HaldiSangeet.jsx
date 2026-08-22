@@ -13,10 +13,10 @@ export default function HaldiSangeet() {
         <div className="container text-center">
           <Link to="/calendar" className="btn-secondary" style={{ marginBottom: '24px', display: 'inline-flex', padding: '8px 16px', letterSpacing: '1px', textTransform: 'none' }}>
             <ArrowLeft size={16} style={{ marginRight: '8px' }} />
-            {t('sangeet.backBtn', 'Back to Calendar')}
+            {t('Back to Calendar')}
           </Link>
-          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('sangeet.title', 'Haldi & Sangeet Ceremonies')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('sangeet.subtitle', 'Prajwala Nag & Shravan Kumar')}</p>
+          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('Haldi & Sangeet Ceremonies')}</h1>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -30,7 +30,7 @@ export default function HaldiSangeet() {
       <section className="haldi-countdown-section" style={{ padding: '20px 0' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
           <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('sangeet.countdown.title', 'Countdown to Haldi & Sangeet')}</span>
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Haldi & Sangeet')}</span>
             <Countdown targetDate="2026-12-12T10:00:00" />
           </div>
         </div>
@@ -44,21 +44,21 @@ export default function HaldiSangeet() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('sangeet.card.datetime', 'Date & Time')}</h2>
+                <h2>{t('Date & Time')}</h2>
               </div>
               <div className="schedule-list">
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>10:00 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('sangeet.event.haldi', 'Haldi Ceremony')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('sangeet.event.haldi.desc', 'A joyful turmeric paste-applying ritual with pure traditional vibes.')}</p>
+                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Haldi Ceremony')}</h4>
+                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('A joyful turmeric paste-applying ritual with pure traditional vibes.')}</p>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>06:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('sangeet.event.sangeet', 'Sangeet Ceremony & Gala Dinner')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('sangeet.event.sangeet.desc', 'Choreographed dance performances, music, and a celebratory feast.')}</p>
+                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Sangeet Ceremony & Gala Dinner')}</h4>
+                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('Choreographed dance performances, music, and a celebratory feast.')}</p>
                   </div>
                 </div>
               </div>
@@ -68,13 +68,13 @@ export default function HaldiSangeet() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('sangeet.card.venue', 'The Venue')}</h2>
+                <h2>{t('The Venue')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('wedding.event.dec11.loc', 'Atmosphere')}</h3>
-                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('wedding.venue.city', 'Mysuru, Karnataka, India')}</p>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('Atmosphere')}</h3>
+                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('Mysuru, Karnataka, India')}</p>
                 <p className="venue-desc" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-                  {t('sangeet.venue.desc', 'Haldi will take place at the Sunlit Courtyard, and Sangeet is hosted inside the Grand Ballroom.')}
+                  {t('Haldi will take place at the Sunlit Courtyard, and Sangeet is hosted inside the Grand Ballroom.')}
                 </p>
                 <a 
                   href="https://maps.app.goo.gl/mrCJF1aKULHWHMcS6?g_st=aw" 
@@ -84,8 +84,8 @@ export default function HaldiSangeet() {
                   style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textDecoration: 'none', cursor: 'pointer' }}
                 >
                   <MapPin size={24} className="map-pin-icon" style={{ color: 'var(--text-gold)' }} />
-                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('wedding.maps.label', 'View Venue on Google Maps')}</p>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('wedding.maps.sub', 'Click to open driving directions')}</span>
+                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('View Venue on Google Maps')}</p>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('Click to open driving directions')}</span>
                 </a>
               </div>
             </div>
@@ -94,15 +94,15 @@ export default function HaldiSangeet() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Shirt className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('sangeet.card.dresscode', 'Dress Code')}</h2>
+                <h2>{t('Dress Code')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('sangeet.dresscode.title', 'Vibrant / Indo-Western Festive')}</h3>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('Vibrant / Indo-Western Festive')}</h3>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>
-                  {t('sangeet.dresscode.desc', 'For the Haldi, yellow/mustard ethnic wear is highly recommended. For the Sangeet night, dress in your best Indo-Western or glittering ethnic outfits!')}
+                  {t('For the Haldi, yellow/mustard ethnic wear is highly recommended. For the Sangeet night, dress in your best Indo-Western or glittering ethnic outfits!')}
                 </p>
                 <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--text-gold)', fontWeight: '600' }}>
-                  {t('sangeet.dresscode.palette', 'Color Ideas: Mustard yellow, turmeric gold (Haldi); Royal blue, magenta, emerald, black, or gold (Sangeet).')}
+                  {t('Color Ideas: Mustard yellow, turmeric gold (Haldi); Royal blue, magenta, emerald, black, or gold (Sangeet).')}
                 </p>
               </div>
             </div>
@@ -111,31 +111,31 @@ export default function HaldiSangeet() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Sparkles className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('sangeet.card.flow', 'Flow of the Event')}</h2>
+                <h2>{t('Flow of the Event')}</h2>
               </div>
               <div className="schedule-list">
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>10:00 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('sangeet.flow.1000', 'Haldi Ceremonial rituals')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Haldi Ceremonial rituals')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>12:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('sangeet.flow.1230', 'Traditional South Indian Lunch')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Traditional South Indian Lunch')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>06:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('sangeet.flow.1800', 'Sangeet Stage Performances & DJ')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Sangeet Stage Performances & DJ')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>08:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('sangeet.flow.2000', 'Dinner is served')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Dinner is served')}</h4>
                   </div>
                 </div>
               </div>

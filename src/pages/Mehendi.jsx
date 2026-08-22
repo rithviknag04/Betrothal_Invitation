@@ -13,10 +13,10 @@ export default function Mehendi() {
         <div className="container text-center">
           <Link to="/calendar" className="btn-secondary" style={{ marginBottom: '24px', display: 'inline-flex', padding: '8px 16px', letterSpacing: '1px', textTransform: 'none' }}>
             <ArrowLeft size={16} style={{ marginRight: '8px' }} />
-            {t('mehendi.backBtn', 'Back to Calendar')}
+            {t('Back to Calendar')}
           </Link>
-          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('mehendi.title', 'The Mehendi Ceremony')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('mehendi.subtitle', 'Prajwala Nag & Shravan Kumar')}</p>
+          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('The Mehendi Ceremony')}</h1>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -30,7 +30,7 @@ export default function Mehendi() {
       <section className="mehendi-countdown-section" style={{ padding: '20px 0' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
           <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('mehendi.countdown.title', 'Countdown to Mehendi')}</span>
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to Mehendi')}</span>
             <Countdown targetDate="2026-12-11T18:00:00" />
           </div>
         </div>
@@ -44,13 +44,13 @@ export default function Mehendi() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('mehendi.card.datetime', 'Date & Time')}</h2>
+                <h2>{t('Date & Time')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('mehendi.time', 'December 11th, 2026')}</h3>
-                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('mehendi.time.sub', '6:00 PM Onwards')}</p>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('December 11th, 2026')}</h3>
+                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('6:00 PM Onwards')}</p>
                 <p style={{ color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                  {t('mehendi.desc', 'Kickstarting the wedding celebrations with a colorful evening filled with intricate henna designs, folk music, and delicious appetizers.')}
+                  {t('Kickstarting the wedding celebrations with a colorful evening filled with intricate henna designs, folk music, and delicious appetizers.')}
                 </p>
               </div>
             </div>
@@ -59,13 +59,13 @@ export default function Mehendi() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('mehendi.card.venue', 'The Venue')}</h2>
+                <h2>{t('The Venue')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('wedding.event.dec11.loc', 'Atmosphere')}</h3>
-                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('wedding.venue.city', 'Mysuru, Karnataka, India')}</p>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{t('Atmosphere')}</h3>
+                <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{t('Mysuru, Karnataka, India')}</p>
                 <p className="venue-desc" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-                  {t('mehendi.venue.desc', 'A beautifully decorated garden lawn set up for a vibrant, relaxed evening celebration.')}
+                  {t('A beautifully decorated garden lawn set up for a vibrant, relaxed evening celebration.')}
                 </p>
                 <a 
                   href="https://maps.app.goo.gl/mrCJF1aKULHWHMcS6?g_st=aw" 
@@ -75,8 +75,8 @@ export default function Mehendi() {
                   style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textDecoration: 'none', cursor: 'pointer' }}
                 >
                   <MapPin size={24} className="map-pin-icon" style={{ color: 'var(--text-gold)' }} />
-                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('wedding.maps.label', 'View Venue on Google Maps')}</p>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('wedding.maps.sub', 'Click to open driving directions')}</span>
+                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('View Venue on Google Maps')}</p>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('Click to open driving directions')}</span>
                 </a>
               </div>
             </div>
@@ -85,15 +85,15 @@ export default function Mehendi() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Shirt className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('mehendi.card.dresscode', 'Dress Code')}</h2>
+                <h2>{t('Dress Code')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('mehendi.dresscode.title', 'Green & Yellow Festive Wear')}</h3>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('Green & Yellow Festive Wear')}</h3>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>
-                  {t('mehendi.dresscode.desc', 'We invite our friends and family to dress in bright shades of green and yellow to match the traditional colors of Mehendi.')}
+                  {t('We invite our friends and family to dress in bright shades of green and yellow to match the traditional colors of Mehendi.')}
                 </p>
                 <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--text-gold)', fontWeight: '600' }}>
-                  {t('mehendi.dresscode.palette', 'Color Ideas: Mint green, lime green, mustard, lemon yellow, and beige.')}
+                  {t('Color Ideas: Mint green, lime green, mustard, lemon yellow, and beige.')}
                 </p>
               </div>
             </div>
@@ -102,31 +102,31 @@ export default function Mehendi() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Sparkles className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('mehendi.card.flow', 'Flow of the Event')}</h2>
+                <h2>{t('Flow of the Event')}</h2>
               </div>
               <div className="schedule-list">
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>06:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('mehendi.flow.0600', 'Welcoming the Guests')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Welcoming the Guests')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>06:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('mehendi.flow.0630', 'Mehendi/Henna Application')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Mehendi/Henna Application')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>08:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('mehendi.flow.0800', 'Live Folk Music & Open Stage')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Live Folk Music & Open Stage')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>08:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('mehendi.flow.0830', 'Celebration Feast & Dinner')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Celebration Feast & Dinner')}</h4>
                   </div>
                 </div>
               </div>

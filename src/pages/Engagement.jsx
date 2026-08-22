@@ -8,9 +8,9 @@ export default function Engagement() {
   const { t } = useLanguage();
   
   // You can easily update the date and location details below:
-  const engagementDateString = "2026-09-20T10:30:00"; // Date format: YYYY-MM-DDTHH:MM:SS
-  const engagementDateFormatted = t('engagement.dateFormatted', "September 20th, 2026");
-  const engagementLocation = t('engagement.locationName', "Atmosphere, Mysuru");
+  const engagementDateString = "2026-09-20T10:00:00"; // Date format: YYYY-MM-DDTHH:MM:SS
+  const engagementDateFormatted = t("September 20th, 2026");
+  const engagementLocation = t("Atmosphere, Mysuru");
 
   return (
     <div className="engagement-page animate-fade-in">
@@ -18,10 +18,10 @@ export default function Engagement() {
         <div className="container text-center">
           <Link to="/" className="btn-secondary" style={{ marginBottom: '24px', display: 'inline-flex', padding: '8px 16px', letterSpacing: '1px', textTransform: 'none' }}>
             <ArrowLeft size={16} style={{ marginRight: '8px' }} />
-            {t('engagement.backBtn', 'Back to Welcome')}
+            {t('Back to Welcome')}
           </Link>
-          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('engagement.title', 'The Engagement Ceremony')}</h1>
-          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('engagement.subtitle', 'Prajwala Nag & Shravan Kumar')}</p>
+          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('The Engagement Ceremony')}</h1>
+          <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>{t('Prajwala Nag & Shravan Kumar')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -35,7 +35,7 @@ export default function Engagement() {
       <section className="engagement-countdown-section" style={{ padding: '20px 0' }}>
         <div className="container" style={{ maxWidth: '600px' }}>
           <div className="glass-panel text-center countdown-wrap-card">
-            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('engagement.countdown.title', 'Countdown to the Engagement')}</span>
+            <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '12px' }}>{t('Countdown to the Engagement')}</span>
             <Countdown targetDate={engagementDateString} />
           </div>
         </div>
@@ -48,21 +48,21 @@ export default function Engagement() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Calendar className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('engagement.card.datetime', 'Date & Time')}</h2>
+                <h2>{t('Date & Time')}</h2>
               </div>
               <div className="schedule-list">
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '20px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>10:30 AM</span>
+                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>10:00 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('engagement.event.ring', 'Ring Ceremony & Exchange of Vows')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('engagement.event.ring.desc', 'The couple will exchange rings in the presence of family and friends.')}</p>
+                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Ring Ceremony & Exchange of Vows')}</h4>
+                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('The couple will exchange rings in the presence of family and friends.')}</p>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '80px' }}>12:00 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('engagement.event.dinner', 'Lunch & Celebrations')}</h4>
-                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('engagement.event.dinner.desc', 'Join us for an elegant Afternoon of Lunch, music, and joy.')}</p>
+                    <h4 style={{ fontFamily: 'var(--font-sans)', fontWeight: '600' }}>{t('Lunch & Celebrations')}</h4>
+                    <p style={{ margin: '4px 0 0', color: 'var(--text-secondary)' }}>{t('Join us for an elegant Afternoon of Lunch, music, and joy.')}</p>
                   </div>
                 </div>
               </div>
@@ -72,13 +72,13 @@ export default function Engagement() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('engagement.card.venue', 'The Venue')}</h2>
+                <h2>{t('The Venue')}</h2>
               </div>
               <div className="venue-info">
                 <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{engagementLocation}</h3>
                 <p className="venue-address" style={{ fontWeight: '500', color: 'var(--text-accent)', marginBottom: '16px' }}>{engagementDateFormatted}</p>
                 <p className="venue-desc" style={{ color: 'var(--text-secondary)' }}>
-                  {t('engagement.venue.desc', 'A beautifully decorated hall chosen for this special occasion, setting a warm and joyful ambiance for the ring ceremony.')}
+                  {t('A beautifully decorated hall chosen for this special occasion, setting a warm and joyful ambiance for the ring ceremony.')}
                 </p>
                 <a 
                   href="https://maps.app.goo.gl/XT3cfnBiZa6WMh1r8" 
@@ -88,8 +88,8 @@ export default function Engagement() {
                   style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textDecoration: 'none', cursor: 'pointer' }}
                 >
                   <MapPin size={24} className="map-pin-icon" style={{ color: 'var(--text-gold)' }} />
-                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('engagement.maps.label', 'View Venue on Google Maps')}</p>
-                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('engagement.maps.sub', 'Click to open driving directions')}</span>
+                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('View Venue on Google Maps')}</p>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('Click to open driving directions')}</span>
                 </a>
               </div>
             </div>
@@ -98,15 +98,15 @@ export default function Engagement() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Shirt className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('engagement.card.dresscode', 'Dress Code')}</h2>
+                <h2>{t('Dress Code')}</h2>
               </div>
               <div className="venue-info">
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('engagement.dresscode.title', 'Festive Pastel Wear')}</h3>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('Festive Pastel Wear')}</h3>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>
-                  {t('engagement.dresscode.desc', 'We would love for you to celebrate with us in elegant pastel traditional or semi-formal attire. Lightweight, breathable fabrics are recommended!')}
+                  {t('We would love for you to celebrate with us in elegant pastel traditional or semi-formal attire. Lightweight, breathable fabrics are recommended!')}
                 </p>
                 <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--text-gold)', fontWeight: '600' }}>
-                  {t('engagement.dresscode.palette', 'Color Ideas: Lavender, peach, soft mint green, powder blue, and champagne gold.')}
+                  {t('Color Ideas: Lavender, peach, soft mint green, powder blue, and champagne gold.')}
                 </p>
               </div>
             </div>
@@ -115,31 +115,31 @@ export default function Engagement() {
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                 <Sparkles className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                <h2>{t('engagement.card.flow', 'Flow of the Event')}</h2>
+                <h2>{t('Flow of the Event')}</h2>
               </div>
               <div className="schedule-list">
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>10:30 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('engagement.flow.0430', 'Guest Arrival & Welcoming')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Guest Arrival & Welcoming')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>11:00 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('engagement.flow.0500', 'Ring Ceremony & Exchange of Vows')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Ring Ceremony & Exchange of Vows')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>11:45 AM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('engagement.flow.0600', 'Cake Cutting & Stage Photography')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Cake Cutting & Stage Photography')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>12:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('engagement.flow.0700', 'Buffet Lunch & Congratulations')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Buffet Lunch & Congratulations')}</h4>
                   </div>
                 </div>
               </div>

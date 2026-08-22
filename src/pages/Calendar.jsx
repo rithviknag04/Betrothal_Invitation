@@ -37,7 +37,7 @@ const SYSTEM_EVENTS = [
     type: 'wedding-main'
   },
   {
-    date: '2026-08-23',
+    date: '2026-09-20',
     title: 'Engagement Ceremony',
     time: '4:30 PM onwards',
     location: 'The Emerald Ballroom, Atmosphere, Mysuru',
@@ -53,7 +53,7 @@ export default function Calendar() {
   const { language, t } = useLanguage();
   
   // Set default calendar view to December 2026
-  const [currentDate, setCurrentDate] = useState(new Date(2026, 11, 1));
+  const [currentDate, setCurrentDate] = useState(new Date(2026, 8, 1));
   const [selectedDate, setSelectedDate] = useState(new Date(2026, 11, 11));
   const [customEvents, setCustomEvents] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -127,36 +127,36 @@ export default function Calendar() {
       if (evt.date === '2026-12-11') {
         return {
           ...evt,
-          title: t('wedding.event.dec11', 'Mehendi Ceremony'),
-          desc: t('wedding.event.dec11.desc', '6:00 PM onwards — Henna, music, and celebrations.')
+          title: t('Mehendi Ceremony'),
+          desc: t('6:00 PM onwards — Henna, music, and celebrations.')
         };
       }
       if (evt.date === '2026-12-12') {
         return {
           ...evt,
-          title: t('wedding.event.dec12', 'Haldi & Sangeet Night'),
-          desc: t('wedding.event.dec12.desc', '10:00 AM (Haldi) & 6:00 PM (Sangeet dance performances).')
+          title: t('Haldi & Sangeet Night'),
+          desc: t('10:00 AM (Haldi) & 6:00 PM (Sangeet dance performances).')
         };
       }
       if (evt.date === '2026-12-13') {
         return {
           ...evt,
-          title: t('wedding.event.dec13', 'Wedding & Reception'),
-          desc: t('wedding.event.dec13.desc', 'Sacred Muhurtham rituals followed by reception dinner.')
+          title: t('Wedding & Reception'),
+          desc: t('Sacred Muhurtham rituals followed by reception dinner.')
         };
       }
       if (evt.date === '2026-12-14') {
         return {
           ...evt,
-          title: t('wedding.event.dec14', 'Blessings & Reception Lunch'),
-          desc: t('wedding.event.dec14.desc', 'Gala lunch gathering to bless the newlywed couple.')
+          title: t('Blessings & Reception Lunch'),
+          desc: t('Gala lunch gathering to bless the newlywed couple.')
         };
       }
-      if (evt.date === '2026-08-23' || evt.date === '2026-09-20') {
+      if (evt.date === '2026-09-20') {
         return {
           ...evt,
-          title: t('engagement.title', 'The Engagement Ceremony'),
-          desc: t('engagement.event.ring.desc', 'The couple will exchange rings in the presence of family and friends.')
+          title: t('The Engagement Ceremony'),
+          desc: t('The couple will exchange rings in the presence of family and friends.')
         };
       }
       return evt;
@@ -278,9 +278,9 @@ export default function Calendar() {
     <div className="calendar-page animate-fade-in">
       <section className="section page-header-section" style={{ paddingBottom: '20px' }}>
         <div className="container text-center">
-          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('calendar.title', 'Wedding Calendar')}</h1>
+          <h1 className="page-title" style={{ fontSize: '3rem', marginBottom: '8px' }}>{t('Wedding Calendar')}</h1>
           <p className="page-subtitle" style={{ fontSize: '1.2rem', color: 'var(--text-secondary)' }}>
-            {t('calendar.subtitle', 'Click on highlighted dates to view event details or add your own custom schedule.')}
+            {t('Click on highlighted dates to view event details or add your own custom schedule.')}
           </p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
@@ -361,7 +361,7 @@ export default function Calendar() {
             </button>
             
             <div style={{ borderBottom: '1px solid var(--border-color)', paddingBottom: '14px', marginBottom: '20px' }}>
-              <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '4px' }}>{t('calendar.card.header', 'Date Details')}</span>
+              <span className="hero-eyebrow" style={{ display: 'block', marginBottom: '4px' }}>{t('Date Details')}</span>
               <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.4rem', margin: 0, color: 'var(--text-accent)' }}>
                 {formatModalHeaderDate(selectedDate)}
               </h3>
@@ -406,7 +406,7 @@ export default function Calendar() {
                         }}
                         style={{ padding: '6px 12px', fontSize: '0.75rem', width: '100%', textTransform: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '4px' }}
                       >
-                        {t('calendar.btn.viewDetails', 'View Full Details Page')}
+                        {t('View Full Details Page')}
                       </button>
                     )}
                   </div>
@@ -414,7 +414,7 @@ export default function Calendar() {
               ) : (
                 <div style={{ textAlign: 'center', padding: '30px 0', color: 'var(--text-secondary)' }}>
                   <CalendarIcon size={32} style={{ opacity: 0.3, marginBottom: '8px' }} />
-                  <p style={{ margin: 0, fontSize: '0.9rem' }}>{t('calendar.card.noEvents', 'No events scheduled for this date.')}</p>
+                  <p style={{ margin: 0, fontSize: '0.9rem' }}>{t('No events scheduled for this date.')}</p>
                 </div>
               )}
             </div>
@@ -427,18 +427,18 @@ export default function Calendar() {
                 style={{ width: '100%', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px', padding: '12px 24px' }}
               >
                 <Plus size={16} />
-                {t('calendar.btn.addEvent', 'Add Event')}
+                {t('Add Event')}
               </button>
             ) : (
               <div className="glass-card" style={{ padding: '16px', borderRadius: '12px', border: '1px dashed var(--border-color)' }}>
-                <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-primary)' }}>{t('calendar.modal.addTitle', 'Add Custom Event')}</h4>
+                <h4 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', marginBottom: '12px', color: 'var(--text-primary)' }}>{t('Add Custom Event')}</h4>
                 <form onSubmit={handleAddEventSubmit}>
                   <div className="form-group" style={{ marginBottom: '12px' }}>
-                    <label className="form-label">{t('calendar.modal.labelName', 'Event Name *')}</label>
+                    <label className="form-label">{t('Event Name *')}</label>
                     <input
                       type="text"
                       required
-                      placeholder={t('calendar.modal.namePlaceholder', 'e.g. Hotel Check-in, Family Dinner')}
+                      placeholder={t('e.g. Hotel Check-in, Family Dinner')}
                       className="form-input"
                       value={eventTitle}
                       onChange={(e) => setEventTitle(e.target.value)}
@@ -447,10 +447,10 @@ export default function Calendar() {
 
                   <div style={{ display: 'flex', gap: '12px', marginBottom: '12px', width: '100%' }}>
                     <div className="form-group" style={{ marginBottom: 0, flex: 1, minWidth: 0 }}>
-                      <label className="form-label">{t('calendar.modal.labelTime', 'Time')}</label>
+                      <label className="form-label">{t('Time')}</label>
                       <input
                         type="text"
-                        placeholder={t('calendar.modal.timePlaceholder', 'e.g. 1:00 PM')}
+                        placeholder={t('e.g. 1:00 PM')}
                         className="form-input"
                         style={{ width: '100%' }}
                         value={eventTime}
@@ -458,10 +458,10 @@ export default function Calendar() {
                       />
                     </div>
                     <div className="form-group" style={{ marginBottom: 0, flex: 1, minWidth: 0 }}>
-                      <label className="form-label">{t('calendar.modal.labelLoc', 'Location')}</label>
+                      <label className="form-label">{t('Location')}</label>
                       <input
                         type="text"
-                        placeholder={t('calendar.modal.locPlaceholder', 'e.g. Hotel Lobby')}
+                        placeholder={t('e.g. Hotel Lobby')}
                         className="form-input"
                         style={{ width: '100%' }}
                         value={eventLocation}
@@ -471,9 +471,9 @@ export default function Calendar() {
                   </div>
 
                   <div className="form-group" style={{ marginBottom: '16px' }}>
-                    <label className="form-label">{t('calendar.modal.labelNotes', 'Notes')}</label>
+                    <label className="form-label">{t('Notes')}</label>
                     <textarea
-                      placeholder={t('calendar.modal.notesPlaceholder', 'Add reminders or flight/room details...')}
+                      placeholder={t('Add reminders or flight/room details...')}
                       className="form-textarea"
                       rows="2"
                       value={eventDesc}
@@ -483,10 +483,10 @@ export default function Calendar() {
 
                   <div style={{ display: 'flex', gap: '10px', justifyContent: 'flex-end' }}>
                     <button type="button" className="btn-secondary" onClick={() => setShowAddForm(false)} style={{ padding: '6px 12px', fontSize: '0.8rem' }}>
-                      {t('calendar.btn.cancel', 'Cancel')}
+                      {t('Cancel')}
                     </button>
                     <button type="submit" className="btn-primary" style={{ padding: '6px 12px', fontSize: '0.8rem' }}>
-                      {t('calendar.btn.save', 'Save')}
+                      {t('Save')}
                     </button>
                   </div>
                 </form>

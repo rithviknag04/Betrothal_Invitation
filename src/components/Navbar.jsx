@@ -18,16 +18,16 @@ export default function Navbar() {
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <div className="nav-links">
             <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-              {t('nav.home', 'Home')}
+              {t('Home')}
             </NavLink>
             <NavLink to="/story" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-              {t('nav.story', 'Our Story')}
+              {t('Our Story')}
             </NavLink>
             <NavLink to="/gallery" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-              {t('nav.gallery', 'Gallery')}
+              {t('Gallery')}
             </NavLink>
             <NavLink to="/calendar" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-              {t('nav.calendar', 'Calendar')}
+              {t('Calendar')}
             </NavLink>
           </div>
 

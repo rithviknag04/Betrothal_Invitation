@@ -4,31 +4,31 @@ import { useLanguage } from '../context/LanguageContext';
 
 const storyMilestones = [
   {
-    key: '0',
     date: 'May 12, 2021',
     title: 'How We Met',
-    description: '',
+    brideDesc: 'It was a warm summer evening when Shravan walked into the room. He had this quiet confidence and warm smile. We ended up talking for hours, laughing over the silly jokes.',
+    groomDesc: 'The moment I saw Prajwala, I was mesmerized. She was laughing and chatting, filling the room with her brightness. I knew immediately I had to find a way to talk to her.',
     icon: <Smile size={20} />,
   },
   {
-    key: '1',
     date: 'June 18, 2021',
     title: 'Our First Date',
-    description: 'A surprise sunset picnic. We spent the evening talking under a grand oak tree, knowing this was something special.',
+    brideDesc: 'He planned a surprise sunset picnic! He brought my favorite snacks, and we sat under a massive oak tree. It felt so easy and natural, like we had known each other forever.',
+    groomDesc: 'I was so nervous planning this surprise picnic. When we sat under the oak tree and started talking, all my worries disappeared. Her smile made the whole setup magical.',
     icon: <MapPin size={20} />,
   },
   {
-    key: '2',
     date: 'September 24, 2025',
     title: 'The Proposal',
-    description: 'Under the canopy of stars, Shravan asked the question at a beautiful venue, and Prajwala said yes!',
+    brideDesc: 'I had no idea what was coming! We walked into this beautiful venue lit up with fairy lights under a canopy of stars. When he got down on one knee, my heart skipped a beat.',
+    groomDesc: 'I spent weeks planning the perfect setting under the stars. My hands were shaking when I pulled out the ring. The moment she whispered \'yes\', I was the happiest man alive.',
     icon: <Sparkles size={20} />,
   },
   {
-    key: '3',
     date: 'December 13, 2026',
     title: 'The Big Day',
-    description: 'We tie the knot! We cannot wait to celebrate this culmination of our love with our dearest family and friends.',
+    brideDesc: 'Now we are one step away from forever. I cannot wait to hold his hand and walk around the sacred fire, starting our beautiful new beginning together.',
+    groomDesc: 'Seeing her walk down the aisle in her wedding attire will be the dream of my life. I am ready to promise her all my love and protect her forever.',
     icon: <Heart size={20} />,
   },
 ];
@@ -41,21 +41,21 @@ export default function Story() {
     <div className="story-page animate-fade-in">
       <section className="section story-hero" style={{ paddingBottom: '10px' }}>
         <div className="container text-center">
-          <h1 className="page-title">{t('story.title', 'Our Story')}</h1>
-          <p className="page-subtitle">{t('story.subtitle', 'The beautiful journey that led us to this moment')}</p>
+          <h1 className="page-title">{t('Our Story')}</h1>
+          <p className="page-subtitle">{t('The beautiful journey that led us to this moment')}</p>
           
           <div className="pov-toggle-container">
             <button
               onClick={() => setActivePov('bride')}
               className={`pov-btn ${activePov === 'bride' ? 'active' : ''}`}
             >
-              {t('story.btn.bridePov', "Bride's POV")}
+              {t("Bride's POV")}
             </button>
             <button
               onClick={() => setActivePov('groom')}
               className={`pov-btn ${activePov === 'groom' ? 'active' : ''}`}
             >
-              {t('story.btn.groomPov', "Groom's POV")}
+              {t("Groom's POV")}
             </button>
           </div>
 
@@ -82,9 +82,9 @@ export default function Story() {
                 
                 <div className="timeline-card-wrapper">
                   <div className="timeline-card glass-panel" style={{ transition: 'all 0.3s ease' }}>
-                    <span className="timeline-date">{t(`story.milestone.${milestone.key}.date`, milestone.date)}</span>
-                    <h3 className="timeline-title">{t(`story.milestone.${milestone.key}.title`, milestone.title)}</h3>
-                    <p className="timeline-desc">{t(`story.milestone.${milestone.key}.desc.${activePov}`, milestone.description)}</p>
+                    <span className="timeline-date">{t(milestone.date)}</span>
+                    <h3 className="timeline-title">{t(milestone.title)}</h3>
+                    <p className="timeline-desc">{t(activePov === 'bride' ? milestone.brideDesc : milestone.groomDesc)}</p>
                   </div>
                 </div>
               </div>

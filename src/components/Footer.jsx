@@ -15,9 +15,9 @@ export default function Footer() {
           </div>
           <div className="botanical-line"></div>
         </div>
-        <p className="footer-title">{t('home.couple', 'Prajwala Nag & Shravan Kumar')}</p>
-        <p className="footer-subtitle">{t('footer.date', 'December 13th & 14th, Mysuru')}</p>
-        <p className="footer-copyright">{t('footer.made', 'Made with love for our wedding day.')}</p>
+        <p className="footer-title">{t('Prajwala Nag & Shravan Kumar')}</p>
+        <p className="footer-subtitle">{t('December 13th & 14th, Mysuru')}</p>
+        <p className="footer-copyright">{t('Made with love for our wedding day.')}</p>
       </div>
     </footer>
   );

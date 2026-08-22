@@ -98,10 +98,10 @@ export default function Gallery() {
 
     files.forEach(file => {
       if (file.size > 2 * 1024 * 1024) {
-        setErrorMsg(t('gallery.toast.sizeError', 'Some images exceeded the 2MB size limit and were skipped.'));
+        setErrorMsg(t('Some images exceeded the 2MB size limit and were skipped.'));
         return;
       }
-      
+
       const reader = new FileReader();
       reader.onloadend = () => {
         setImages(prev => [
@@ -120,11 +120,11 @@ export default function Gallery() {
   const handleUploadSubmit = (e) => {
     e.preventDefault();
     if (images.length === 0) {
-      setErrorMsg(t('gallery.toast.selectError', 'Please select at least one photo.'));
+      setErrorMsg(t('Please select at least one photo.'));
       return;
     }
     if (!uploadName.trim()) {
-      setErrorMsg(t('gallery.toast.nameError', 'Please enter your name.'));
+      setErrorMsg(t('Please enter your name.'));
       return;
     }
 
@@ -159,7 +159,7 @@ export default function Gallery() {
   };
 
   const handleDeletePhoto = (photoToDelete) => {
-    if (window.confirm(t('gallery.delete.confirm', 'Are you sure you want to delete this picture permanently?'))) {
+    if (window.confirm(t('Are you sure you want to delete this photo permanently?'))) {
       const updatedPhotos = photos.filter(p => p !== photoToDelete);
       setPhotos(updatedPhotos);
       localStorage.setItem('wedding_gallery_photos', JSON.stringify(updatedPhotos));
@@ -173,7 +173,7 @@ export default function Gallery() {
   };
 
   const handleResetGallery = () => {
-    if (window.confirm(t('gallery.reset.confirm', 'Are you sure you want to reset the gallery? This will permanently delete all guest uploads.'))) {
+    if (window.confirm(t('Are you sure you want to reset the gallery? This will permanently delete all guest uploads.'))) {
       setPhotos(initialPhotos);
       localStorage.removeItem('wedding_gallery_photos');
       setSelectedFolder(null);
@@ -184,8 +184,8 @@ export default function Gallery() {
     <div className="gallery-page animate-fade-in">
       <section className="section gallery-hero" style={{ paddingBottom: '30px' }}>
         <div className="container text-center">
-          <h1 className="page-title">{t('gallery.title', 'Photo Gallery')}</h1>
-          <p className="page-subtitle">{t('gallery.subtitle', 'A glimpse into our favorite moments, shared by family & friends')}</p>
+          <h1 className="page-title">{t('Photo Gallery')}</h1>
+          <p className="page-subtitle">{t('A glimpse into our favorite moments, shared by family & friends')}</p>
           <div className="botanical-divider">
             <div className="botanical-line"></div>
             <div className="botanical-icon">
@@ -193,11 +193,11 @@ export default function Gallery() {
             </div>
             <div className="botanical-line"></div>
           </div>
-          
+
           <div className="gallery-actions-container">
             <button className="btn-primary" onClick={() => setIsModalOpen(true)}>
               <Upload size={16} />
-              {t('gallery.btn.upload', 'Share Photos')}
+              {t('Share Photos')}
             </button>
           </div>
         </div>
@@ -209,12 +209,12 @@ export default function Gallery() {
           {selectedFolder === null ? (
             /* Album Folders View */
             <div>
-              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', marginBottom: '24px', textAlign: 'center' }}>{t('gallery.albums.title', 'Shared Albums')}</h2>
+              <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', marginBottom: '24px', textAlign: 'center' }}>{t('Shared Albums')}</h2>
               {folders.length === 0 ? (
                 <div className="gallery-empty-state glass-panel">
                   <Camera size={48} style={{ color: 'var(--text-gold)', marginBottom: '16px' }} />
-                  <h3>{t('gallery.empty.title', 'No Albums in Gallery')}</h3>
-                  <p>{t('gallery.empty.desc', 'Be the first to upload and share a beautiful memory!')}</p>
+                  <h3>{t('No Albums in Gallery')}</h3>
+                  <p>{t('Be the first to upload and share a beautiful memory!')}</p>
                 </div>
               ) : (
                 <div className="folder-grid">
@@ -225,10 +225,10 @@ export default function Gallery() {
                       </div>
                       <div className="folder-info">
                         <span className="folder-title" title={folder.uploader}>
-                          {folder.uploader === 'Prajwala & Shravan' ? t('home.couple', 'Prajwala & Shravan') : folder.uploader}
+                          {folder.uploader === 'Prajwala & Shravan' ? t('Prajwala Nag & Shravan Kumar') : folder.uploader}
                         </span>
                         <span className="folder-count">
-                          {folder.count} {folder.count === 1 ? t('gallery.photo.single', 'photo') : t('gallery.photo.plural', 'photos')}
+                          {folder.count} {folder.count === 1 ? t('photo') : t('photos')}
                         </span>
                       </div>
                     </div>
@@ -246,10 +246,10 @@ export default function Gallery() {
                   style={{ display: 'inline-flex', padding: '8px 16px', letterSpacing: '1px', textTransform: 'none', gap: '6px' }}
                 >
                   <ArrowLeft size={16} />
-                  {t('gallery.btn.back', 'Back to Albums')}
+                  {t('Back to Albums')}
                 </button>
                 <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', margin: 0 }}>
-                  {t('gallery.album.title', 'Album: ')} {selectedFolder === 'Prajwala & Shravan' ? t('home.couple', 'Prajwala & Shravan') : selectedFolder}
+                  {t('Album: ')} {selectedFolder === 'Prajwala & Shravan' ? t('Prajwala Nag & Shravan Kumar') : selectedFolder}
                 </h2>
                 <div style={{ width: '120px' }}></div> {/* Spacer for centering on desktop */}
               </div>
@@ -260,12 +260,12 @@ export default function Gallery() {
                   .map((photo, idx) => (
                     <div key={idx} className="gallery-item glass-card animate-fade-in-scale">
                       <div className="gallery-image-wrapper">
-                        <img src={photo.src} alt={photo.title} className="gallery-image" />
+                        <img src={photo.src} alt={t(photo.title)} className="gallery-image" />
                         
                         {/* Download button */}
                         <a 
                           href={photo.src} 
-                          download={photo.title || 'wedding-photo'} 
+                          download={t(photo.title) || 'wedding-photo'} 
                           className="photo-download-btn"
                           title="Download photo"
                         >
@@ -285,8 +285,8 @@ export default function Gallery() {
 
                         <div className="gallery-overlay">
                           <div className="gallery-overlay-content">
-                            <h3>{photo.uploader === 'Prajwala & Shravan' ? t('gallery.photo.title.' + idx, photo.title) : photo.title}</h3>
-                            <p>{photo.uploader === 'Prajwala & Shravan' ? t('gallery.photo.desc.' + idx, photo.desc) : photo.desc}</p>
+                            <h3>{t(photo.title)}</h3>
+                            <p>{t(photo.desc)}</p>
                           </div>
                         </div>
                       </div>
@@ -304,7 +304,7 @@ export default function Gallery() {
                 style={{ fontSize: '0.8rem', padding: '8px 16px', textTransform: 'none', letterSpacing: '1px', gap: '6px' }}
               >
                 <RefreshCw size={14} />
-                {t('gallery.btn.reset', 'Reset Default Gallery')}
+                {t('Reset Default Gallery')}
               </button>
             </div>
           )}
@@ -319,9 +319,9 @@ export default function Gallery() {
               <X size={20} />
             </button>
             
-            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', marginBottom: '8px', textAlign: 'center' }}>{t('gallery.modal.title', 'Upload Photos')}</h2>
+            <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.8rem', marginBottom: '8px', textAlign: 'center' }}>{t('Upload Photos')}</h2>
             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', textAlign: 'center', marginBottom: '24px' }}>
-              {t('gallery.modal.desc', 'Share your favorite memories with Prajwala & Shravan!')}
+              {t('Share your favorite memories with Prajwala & Shravan!')}
             </p>
 
             <form onSubmit={handleUploadSubmit}>
@@ -333,7 +333,7 @@ export default function Gallery() {
 
               <div className="form-group" style={{ marginBottom: '16px' }}>
                 <label className="form-label" style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: '500' }}>
-                  {t('gallery.modal.selectLabel', 'Select Photos')}
+                  {t('Select Photos')}
                 </label>
                 
                 {images.length === 0 ? (
@@ -348,8 +348,8 @@ export default function Gallery() {
                     <div className="upload-icon-wrap">
                       <Camera size={24} />
                     </div>
-                    <span style={{ fontSize: '0.9rem', fontWeight: '600' }}>{t('gallery.modal.chooseBtn', 'Choose Photo Files')}</span>
-                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{t('gallery.modal.holdCtrl', 'Hold Ctrl to select multiple (max 2MB each)')}</span>
+                    <span style={{ fontSize: '0.9rem', fontWeight: '600' }}>{t('Choose Photo Files')}</span>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>{t('Hold Ctrl to select multiple (max 2MB each)')}</span>
                   </label>
                 ) : (
                   <div className="upload-preview-grid">
@@ -369,7 +369,7 @@ export default function Gallery() {
                     {/* Add More block inside grid */}
                     <label className="add-more-preview-card">
                       <Plus size={16} />
-                      <span style={{ fontSize: '0.65rem', fontWeight: '600' }}>{t('gallery.modal.addMore', 'Add More')}</span>
+                      <span style={{ fontSize: '0.65rem', fontWeight: '600' }}>{t('Add More')}</span>
                       <input 
                         type="file" 
                         accept="image/*" 
@@ -384,7 +384,7 @@ export default function Gallery() {
 
               <div className="form-group" style={{ marginBottom: '16px' }}>
                 <label htmlFor="uploadName" className="form-label" style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: '500' }}>
-                  {t('gallery.modal.labelName', 'Your Name')}
+                  {t('Your Name')}
                 </label>
                 <input
                   type="text"
@@ -400,7 +400,7 @@ export default function Gallery() {
 
               <div className="form-group" style={{ marginBottom: '16px' }}>
                 <label htmlFor="uploadTitle" className="form-label" style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: '500' }}>
-                  {t('gallery.modal.labelCaption', 'Photo Caption')}
+                  {t('Photo Caption')}
                 </label>
                 <input
                   type="text"
@@ -415,7 +415,7 @@ export default function Gallery() {
 
               <div className="form-group" style={{ marginBottom: '24px' }}>
                 <label htmlFor="uploadDesc" className="form-label" style={{ display: 'block', marginBottom: '6px', fontSize: '0.9rem', fontWeight: '500' }}>
-                  {t('gallery.modal.labelDesc', 'Short Message')}
+                  {t('Short Message')}
                 </label>
                 <textarea
                   id="uploadDesc"
@@ -430,7 +430,7 @@ export default function Gallery() {
 
               <button type="submit" className="btn-primary" style={{ width: '100%', justifyContent: 'center' }}>
                 <Upload size={16} />
-                {t('gallery.modal.uploadBtn', 'Upload')} {images.length > 0 ? `${images.length} ` : ''}Photo{images.length > 1 ? 's' : ''}
+                {t('Upload')} {images.length > 0 ? `${images.length} ` : ''}Photo{images.length > 1 ? 's' : ''}
               </button>
             </form>
           </div>

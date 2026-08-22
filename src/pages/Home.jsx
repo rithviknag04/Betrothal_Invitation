@@ -12,8 +12,8 @@ export default function Home() {
       <section className="hero-section">
         <div className="container hero-container">
           <div className="hero-card glass-panel">
-            <span className="hero-eyebrow">{t('home.welcome', 'Welcome to the Wedding Plan of')}</span>
-            <h1 className="hero-title">{t('home.couple', 'Prajwala Nag & Shravan Kumar')}</h1>
+            <span className="hero-eyebrow">{t('Welcome to the Wedding Plan of')}</span>
+            <h1 className="hero-title">{t('Prajwala Nag & Shravan Kumar')}</h1>
             
             <div className="botanical-divider">
               <div className="botanical-line"></div>
@@ -24,15 +24,15 @@ export default function Home() {
             </div>
             
             <p className="hero-intro-text" style={{ margin: '24px 0', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
-              {t('home.intro', 'We are so excited to celebrate our love and begin this new chapter together. Please select a ceremony below to explore details, locations, and countdowns.')}
+              {t('We are so excited to celebrate our love and begin this new chapter together. Please select a ceremony below to explore details, locations, and countdowns.')}
             </p>
             
             <div className="hero-actions">
               <Link to="/engagement" className="btn-primary">
-                {t('home.btn.engagement', 'Engagement')}
+                {t('Engagement')}
               </Link>
               <Link to="/wedding" className="btn-secondary">
-                {t('home.btn.wedding', 'Wedding')}
+                {t('Wedding')}
               </Link>
             </div>
           </div>
