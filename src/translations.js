@@ -59,6 +59,13 @@ export const translations = {
     'Click to open driving directions': 'ರಸ್ತೆ ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ',
 
     // Engagement Page
+    'Traditional Ritual': 'ಸಾಂಪ್ರದಾಯಿಕ ಶಾಸ್ತ್ರ',
+    'Main Ceremony & Dance': 'ಮುಖ್ಯ ಸಮಾರಂಭ & ನೃತ್ಯ',
+    'Celebration': 'ಸಂಭ್ರಮಾಚರಣೆ',
+    'Live Music': 'ಸಂಗೀತ ಕಾರ್ಯಕ್ರಮ',
+    'Grand Feast': 'ವಿಶೇಷ ಭೋಜನ',
+    'Conclusion': 'ಸಮಾರೋಪ',
+    'Please try to follow suggested colour palette below.': 'ದಯವಿಟ್ಟು ಕೆಳಗೆ ನೀಡಲಾದ ಬಣ್ಣಗಳ ಪ್ಯಾಲೆಟ್ ಅನ್ನು ಅನುಸರಿಸಲು ಪ್ರಯತ್ನಿಸಿ.',
     'Ring Ceremony': 'ನಿಶ್ಚಿತಾರ್ಥ ಸಮಾರಂಭ',
     'Countdown to the Engagement': 'ನಿಶ್ಚಿತಾರ್ಥಕ್ಕೆ ಉಳಿದಿರುವ ಸಮಯ',
     'Click to view English Invitation': 'ಇಂಗ್ಲಿಷ್ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',

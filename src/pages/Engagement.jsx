@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Calendar, MapPin, Clock, Heart, ArrowLeft, Shirt, Sparkles, RefreshCw } from 'lucide-react';
+import { Calendar, MapPin, Clock, Heart, ArrowLeft, Shirt, Sparkles, RefreshCw, Music, Utensils, Gift, CheckCircle2 } from 'lucide-react';
 import Countdown from '../components/Countdown';
 import { useLanguage } from '../context/LanguageContext';
 import engagementInviteEn from '../assets/engagement_invite_en.png';
@@ -109,45 +109,116 @@ export default function Engagement() {
               </div>
               <div className="schedule-list">
                 <div className="schedule-item">
-                  <span className="schedule-time">9:00 AM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Lagna Pathrike Ritual Starts')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    9:00 AM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot"></div>
+                  </div>
+                  <div className="schedule-card">
+                    <div className="schedule-icon-box">
+                      <Sparkles size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Lagna Pathrike Ritual Starts')}</h4>
+                      <span className="schedule-tag">{t('Traditional Ritual')}</span>
+                    </div>
                   </div>
                 </div>
+
                 <div className="schedule-item">
-                  <span className="schedule-time">11:00 AM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Ring Exchange Event Starts With Group Dance')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    11:00 AM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot pulse"></div>
+                  </div>
+                  <div className="schedule-card highlight-card">
+                    <div className="schedule-icon-box">
+                      <Heart size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Ring Exchange Event Starts With Group Dance')}</h4>
+                      <span className="schedule-tag highlight-tag">{t('Main Ceremony & Dance')}</span>
+                    </div>
                   </div>
                 </div>
+
                 <div className="schedule-item">
-                  <span className="schedule-time">11:30 AM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Cake Cut')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    11:30 AM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot"></div>
+                  </div>
+                  <div className="schedule-card">
+                    <div className="schedule-icon-box">
+                      <Gift size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Cake Cut')}</h4>
+                      <span className="schedule-tag">{t('Celebration')}</span>
+                    </div>
                   </div>
                 </div>
+
                 <div className="schedule-item">
-                  <span className="schedule-time">11:45 AM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Jamming Session BY SOUL FRET')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    11:45 AM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot"></div>
+                  </div>
+                  <div className="schedule-card">
+                    <div className="schedule-icon-box">
+                      <Music size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Jamming Session BY SOUL FRET')}</h4>
+                      <span className="schedule-tag">{t('Live Music')}</span>
+                    </div>
                   </div>
                 </div>
+
                 <div className="schedule-item">
-                  <span className="schedule-time">12:00 PM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Guests Lunch Starts')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    12:00 PM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot"></div>
+                  </div>
+                  <div className="schedule-card">
+                    <div className="schedule-icon-box">
+                      <Utensils size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Guests Lunch Starts')}</h4>
+                      <span className="schedule-tag">{t('Grand Feast')}</span>
+                    </div>
                   </div>
                 </div>
+
                 <div className="schedule-item">
-                  <span className="schedule-time">2:30 PM</span>
-                  <div className="schedule-dot"></div>
-                  <div className="schedule-info">
-                    <h4>{t('Ring Ceremony Event Concludes')}</h4>
+                  <div className="schedule-time-badge">
+                    <Clock size={12} style={{ marginRight: '4px' }} />
+                    2:30 PM
+                  </div>
+                  <div className="schedule-dot-wrap">
+                    <div className="schedule-dot"></div>
+                  </div>
+                  <div className="schedule-card">
+                    <div className="schedule-icon-box">
+                      <CheckCircle2 size={18} />
+                    </div>
+                    <div className="schedule-info">
+                      <h4>{t('Ring Ceremony Event Concludes')}</h4>
+                      <span className="schedule-tag">{t('Conclusion')}</span>
+                    </div>
                   </div>
                 </div>
               </div>
