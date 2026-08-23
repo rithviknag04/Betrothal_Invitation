@@ -15,9 +15,9 @@ export const translations = {
     'Wedding': 'ಮದುವೆ',
 
     // Footer
-    'On December 13th & 14th, Mysuru': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು, ಮೈಸೂರು',
+    'On December 13th & 14th 2026': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026',
     'Made with love for our wedding day.': 'ನಮ್ಮ ಮದುವೆಯ ಸುಂದರ ನೆನಪಿಗಾಗಿ ಪ್ರೀತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.',
-    'Nag family expects you all be part of all Wedding rituals of ': 'ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ',
+    'Nag family expects you all to be part of all Wedding rituals of ': 'ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ',
 
     // Countdown Component
     'Days': 'ದಿನಗಳು',
@@ -64,7 +64,7 @@ export const translations = {
     'Click to view Kannada Invitation': 'ಕನ್ನಡ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
     'Ring Ceremony & Exchange of Vows': 'ಉಂಗುರ ಬದಲಾಯಿಸುವಿಕೆ ಮತ್ತು ಪ್ರಮಾಣ ವಚನ',
     'Breakfast at Nag Home': 'ನಾಗ್ ಅವರ ಮನೆಯಲ್ಲಿ ಉಪಹಾರ',
-    'All Family Members Transfers to Atmosphere': 'ಕುಟುಂಬದ ಎಲ್ಲಾ ಸದಸ್ಯರು "ಅಟ್ಮಾಸ್ಫಿಯರ್ ಹಾಲ್ಗೆ" ತೆರಳುತ್ತಾರೆ',
+    'All Family Members Transfers to Atmosphere': 'ಕುಟುಂಬದ ಎಲ್ಲಾ ಸದಸ್ಯರು "ಅಟ್ಮಾಸ್ಫಿಯರ್ ಹಾಲ್"ಗೆ ತೆರಳುತ್ತಾರೆ',
     'Welcoming Groom Family' : 'ವರನ ಕುಟುಂಬವನ್ನು ಸ್ವಾಗತಿಸುವುದು',
     'Groom Freshup': 'ವರನು ಸಿದ್ಧವಾಗುವುದು',
     'Lagna Pathrike Ritual Starts': 'ಲಗ್ನಪತ್ರಿಕೆ ಶಾಸ್ತ್ರ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ',
