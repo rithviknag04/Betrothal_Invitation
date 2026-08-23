@@ -15,8 +15,9 @@ export const translations = {
     'Wedding': 'ಮದುವೆ',
 
     // Footer
-    'December 13th & 14th, Mysuru': 'ಡಿಸೆಂಬರ್ ೧೩ ಮತ್ತು ೧೪, ಮೈಸೂರು',
+    'On December 13th & 14th, Mysuru': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು, ಮೈಸೂರು',
     'Made with love for our wedding day.': 'ನಮ್ಮ ಮದುವೆಯ ಸುಂದರ ನೆನಪಿಗಾಗಿ ಪ್ರೀತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.',
+    'Nag family expects you all be part of all Wedding rituals of ': 'ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ',
 
     // Countdown Component
     'Days': 'ದಿನಗಳು',
