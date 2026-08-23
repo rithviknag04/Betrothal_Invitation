@@ -15,7 +15,7 @@ export const translations = {
     'Wedding': 'ಮದುವೆ',
 
     // Footer
-    'Held On 13th & 14th December 2026': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು ನಡೆಯಲಿರುವ',
+    'held on 13th & 14th December 2026': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು ನಡೆಯಲಿರುವ',
     'Made with love for our wedding day.': 'ನಮ್ಮ ಮದುವೆಯ ಸುಂದರ ನೆನಪಿಗಾಗಿ ಪ್ರೀತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.',
     'Nag family expects you all to be part of all Wedding rituals of ': 'ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ',
 
