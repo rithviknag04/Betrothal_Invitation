@@ -188,13 +188,13 @@ export default function Engagement() {
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>1:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Family Get together Lunch')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Bride and Groom Family Lunch')}</h4>
                   </div>
                 </div>
                 <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
                   <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>2:30 PM</span>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Event Concludes')}</h4>
+                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Ring ceremony Event Concludes')}</h4>
                   </div>
                 </div>
               </div>
@@ -206,7 +206,7 @@ export default function Engagement() {
               <div className="details-card glass-panel">
                 <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
                   <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                  <h2>{t('The Venue')}</h2>
+                  <h2>{t('Venue')}</h2>
                 </div>
                 <div className="venue-info">
                   <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{engagementLocation}</h3>

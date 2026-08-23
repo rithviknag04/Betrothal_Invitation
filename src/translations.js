@@ -57,16 +57,22 @@ export const translations = {
     'Click to open driving directions': 'ರಸ್ತೆ ಮಾರ್ಗದರ್ಶನಕ್ಕಾಗಿ ಕ್ಲಿಕ್ ಮಾಡಿ',
 
     // Engagement Page
-    'The Engagement Ceremony': 'ನಿಶ್ಚಿತಾರ್ಥ ಸಮಾರಂಭ',
+    'Ring Ceremony': 'ನಿಶ್ಚಿತಾರ್ಥ ಸಮಾರಂಭ',
     'Countdown to the Engagement': 'ನಿಶ್ಚಿತಾರ್ಥಕ್ಕೆ ಉಳಿದಿರುವ ಸಮಯ',
     'Click to view English Invitation': 'ಇಂಗ್ಲಿಷ್ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
     'Click to view Kannada Invitation': 'ಕನ್ನಡ ಆಹ್ವಾನ ಪತ್ರಿಕೆ ವೀಕ್ಷಿಸಲು ಕ್ಲಿಕ್ ಮಾಡಿ',
     'Ring Ceremony & Exchange of Vows': 'ಉಂಗುರ ಬದಲಾಯಿಸುವಿಕೆ ಮತ್ತು ಪ್ರಮಾಣ ವಚನ',
+    'Breakfast at Nag Home': 'ನಾಗ್ ಅವರ ಮನೆಯಲ್ಲಿ ಉಪಹಾರ',
+    'All Family Members Transfers to Atmosphere': 'ಕುಟುಂಬದ ಎಲ್ಲಾ ಸದಸ್ಯರು "ಅಟ್ಮಾಸ್ಫಿಯರ್ ಹಾಲ್ಗೆ" ತೆರಳುತ್ತಾರೆ',
+    'Welcoming Groom Family' : 'ವರನ ಕುಟುಂಬವನ್ನು ಸ್ವಾಗತಿಸುವುದು',
+    'Groom Freshup': 'ವರನು ಸಿದ್ಧವಾಗುವುದು',
+    'Lagna Pathrike Ritual Starts': 'ಲಗ್ನಪತ್ರಿಕೆ ಶಾಸ್ತ್ರ ಪ್ರಾರಂಭವಾಗುತ್ತದೆ',
+    'Bride and Groom Family Lunch': 'ವಧು-ವರರ ಕುಟುಂಬಗಳ ಒಟ್ಟಿಗೆ ಮಧ್ಯಾಹ್ನದ ಊಟ',
     'The couple will exchange rings in the presence of family and friends.': 'ಕುಟುಂಬಸ್ಥರು ಮತ್ತು ಸ್ನೇಹಿತರ ಸಮ್ಮುಖದಲ್ಲಿ ದಂಪತಿಗಳು ಉಂಗುರವನ್ನು ಬದಲಾಯಿಸಿಕೊಳ್ಳುತ್ತಾರೆ.',
     'Lunch & Celebrations': 'ಮಧ್ಯಾಹ್ನದ ಔತಣಕೂಟ ಮತ್ತು ಶುಭ ಹಾರೈಕೆಗಳು',
     'Join us for an elegant Afternoon of Lunch, music, and joy.': 'ಸಂಗೀತ ಮತ್ತು ರುಚಿಕರ ಭೋಜನದ ಸುಂದರ ಮಧ್ಯಾಹ್ನದ ಭೋಜನಕೂಟ.',
     'September 20th, 2026': 'ಸೆಪ್ಟೆಂಬರ್ ೨೦, ೨೦೨೬',
-    'Atmosphere, Mysuru': 'ಅಟ್ಮಾಸ್ಫಿಯರ್, ಮೈಸೂರು',
+    'LUXE by Atmosphere, Mysuru': 'ಲಕ್ಸ್ ಬೈ ಅಟ್ಮಾಸ್ಫಿಯರ್, ಮೈಸೂರು',
     'A beautifully decorated hall chosen for this special occasion, setting a warm and joyful ambiance for the ring ceremony.': 'ಉಂಗುರ ಬದಲಾಯಿಸುವ ಶಾಸ್ತ್ರಕ್ಕೆ ಸುಂದರ ಮತ್ತು ಆಕರ್ಷಕವಾಗಿ ಅಲಂಕರಿಸಲ್ಪಟ್ಟ ಸ್ಥಳ.',
     'Festive Pastel Wear': 'ತಿಳಿ ಬಣ್ಣದ ಸುಂದರ ಉಡುಪುಗಳು (Pastel Wear)',
     'We would love for you to celebrate with us in elegant pastel traditional or semi-formal attire. Lightweight, breathable fabrics are recommended!': 'ಸಮಾರಂಭಕ್ಕೆ ತಿಳಿ ಬಣ್ಣದ ಸಾಂಪ್ರದಾಯಿಕ ಅಥವಾ ಸೆಮಿ-ಫಾರ್ಮಲ್ ಉಡುಪುಗಳನ್ನು ಧರಿಸಲು ಕೋರುತ್ತೇವೆ.',
@@ -74,6 +80,7 @@ export const translations = {
     'Guest Arrival & Welcoming': 'ಅತಿಥಿಗಳ ಆಗಮನ ಮತ್ತು ಸ್ವಾಗತ',
     'Cake Cutting & Stage Photography': 'ಕೇಕ್ ಕತ್ತರಿಸುವುದು ಮತ್ತು ಫೋಟೋ ತೆಗೆಸಿಕೊಳ್ಳುವುದು',
     'Buffet Lunch & Congratulations': 'ವಿಶೇಷ ಮಧ್ಯಾಹ್ನದ ಊಟ ಮತ್ತು ಅಭಿನಂದನೆಗಳು',
+    'Ring ceremony Event Concludes': 'ನಿಶ್ಚಿತಾರ್ಥ ಕಾರ್ಯಕ್ರಮ ಮುಕ್ತಾಯ',
 
     // Mehendi Page
     'The Mehendi Ceremony': 'ಮೆಹಂದಿ ಶಾಸ್ತ್ರ',
