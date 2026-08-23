@@ -15,10 +15,12 @@ export default function Footer() {
           </div>
           <div className="botanical-line"></div>
         </div>
-        <p className="footer-title">{t('Nag family expects you all to be part of all Wedding rituals of ')}</p>
-        <p className="footer-subtitle">{t('Prajwala Nag & Shravan Kumar')}</p>
-        <p className="footer-subtitle">{t('held on 13th & 14th December 2026')}</p>
-        <p className="footer-copyright">{t('Made with love for our wedding day.')}</p>
+        <p className="footer-title" style={{ whiteSpace: 'pre-line', lineHeight: '1.8', marginBottom: '16px' }}>
+          {t("Nag family expects you all to be part of all Wedding rituals of\nPrajwala Nag & Shravan Kumar\nheld on 13th & 14th December 2026.")}
+        </p>
+        <p className="footer-copyright">
+          {t("This invitation is made with love by Rithvik Nag")}
+        </p>
       </div>
     </footer>
   );

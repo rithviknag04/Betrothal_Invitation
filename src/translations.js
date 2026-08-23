@@ -15,9 +15,10 @@ export const translations = {
     'Wedding': 'ಮದುವೆ',
 
     // Footer
-    'held on 13th & 14th December 2026': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು ನಡೆಯಲಿರುವ',
-    'Made with love for our wedding day.': 'ನಮ್ಮ ಮದುವೆಯ ಸುಂದರ ನೆನಪಿಗಾಗಿ ಪ್ರೀತಿಯಿಂದ ರಚಿಸಲಾಗಿದೆ.',
-    'Nag family expects you all to be part of all Wedding rituals of ': 'ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ',
+    'Nag family expects you all to be part of all Wedding rituals of\nPrajwala Nag & Shravan Kumar\nheld on 13th & 14th December 2026.': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು ನಡೆಯಲಿರುವ\nಪ್ರಜ್ವಲಾ ನಾಗ್ ಮತ್ತು ಶ್ರವಣ್ ಕುಮಾರ್ ಅವರ \nವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು \nನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ.',
+    // 'Nag family expects you all to be part of all Wedding rituals of Prajwala Nag & Shravan Kumar held on 13th & 14th December 2026.': '13 ಮತ್ತು 14 ಡಿಸೆಂಬರ್ 2026 ರಂದು ನಡೆಯಲಿರುವ\nಪ್ರಜ್ವಲಾ ನಾಗ್ ಮತ್ತು ಶ್ರವಣ್ ಕುಮಾರ್ ಅವರ ವಿವಾಹದ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಲ್ಲಿ ನೀವೆಲ್ಲರೂ ಭಾಗವಹಿಸಬೇಕೆಂದು ನಾಗ್ ಕುಟುಂಬವು ಆಶಿಸುತ್ತದೆ.',
+    'This invitation is lovingly presented by Rithvik Nag.': 'ಈ ಆಹ್ವಾನವನ್ನು ರಿತ್ವಿಕ್ ನಾಗ್ ಅವರು ಪ್ರೀತಿಯಿಂದ ನೀಡುತ್ತಿದ್ದಾರೆ.',
+    // 'This invitation is made with love by Rithvik Nag': 'ಈ ಆಹ್ವಾನವನ್ನು ರಿತ್ವಿಕ್ ನಾಗ್ ಅವರು ಪ್ರೀತಿಯಿಂದ ನೀಡುತ್ತಿದ್ದಾರೆ.',
 
     // Countdown Component
     'Days': 'ದಿನಗಳು',
