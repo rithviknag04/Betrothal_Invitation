@@ -99,7 +99,8 @@ export default function Engagement() {
       </section>
       <section className="events-grid-section" style={{ padding: '20px 0 40px' }}>
         <div className="container">
-          <div className="grid-2" style={{ alignItems: 'start' }}>
+          {/* Top 2-Column Grid: Event Flow & Venue */}
+          <div className="grid-2" style={{ alignItems: 'stretch' }}>
             {/* Flow of the Event */}
             <div className="details-card glass-panel">
               <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
@@ -107,147 +108,99 @@ export default function Engagement() {
                 <h2>{t('Flow of the Event')}</h2>
               </div>
               <div className="schedule-list">
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>7:00 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">9:00 AM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Breakfast at Nag Home')}</h4>
+                    <h4>{t('Lagna Pathrike Ritual Starts')}</h4>
                   </div>
                 </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>7:30 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">11:00 AM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('All Family Members Transfers to Atmosphere')}</h4>
+                    <h4>{t('Ring Exchange Event Starts With Group Dance')}</h4>
                   </div>
                 </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>7:45 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">11:30 AM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Bride Makeup Starts')}</h4>
+                    <h4>{t('Cake Cut')}</h4>
                   </div>
                 </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>8:45 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">11:45 AM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Welcoming Groom Family')}</h4>
+                    <h4>{t('Jamming Session BY SOUL FRET')}</h4>
                   </div>
                 </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>8:50 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">12:00 PM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Groom Freshup')}</h4>
+                    <h4>{t('Guests Lunch Starts')}</h4>
                   </div>
                 </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>9:00 AM</span>
+                <div className="schedule-item">
+                  <span className="schedule-time">2:30 PM</span>
+                  <div className="schedule-dot"></div>
                   <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Lagna Pathrike Ritual Starts')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>10:00 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Bride and Groom Costume Change')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>10:15 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Bride and Groom Photoshoot')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>11:00 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Ring Exchange Event Starts With Group Dance')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>11:30 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Cake Cut and Family Photoshoot')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>11:45 AM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Jamming Session BY SOUL FRET')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>12:00 PM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Guests Lunch Starts')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>1:00 PM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Family Candid')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>1:30 PM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Bride and Groom Family Lunch')}</h4>
-                  </div>
-                </div>
-                <div className="schedule-item" style={{ display: 'flex', gap: '16px', marginBottom: '12px' }}>
-                  <span className="schedule-time" style={{ fontWeight: '600', color: 'var(--text-accent)', minWidth: '70px' }}>2:30 PM</span>
-                  <div className="schedule-info">
-                    <h4 style={{ fontSize: '0.95rem', fontWeight: '600' }}>{t('Ring ceremony Event Concludes')}</h4>
+                    <h4>{t('Ring Ceremony Event Concludes')}</h4>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Right Column: Venue and Dress Code (Dress Code below Venue) */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '40px' }}>
-              {/* The Venue */}
-              <div className="details-card glass-panel">
-                <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                  <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                  <h2>{t('Venue')}</h2>
-                </div>
-                <div className="venue-info">
-                  <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{engagementLocation}</h3>
-                  <p className="venue-desc" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
-                    {t('A beautifully decorated hall chosen for this special occasion, setting a warm and joyful ambiance for the ring ceremony.')}
-                  </p>
-                  <a 
-                    href="https://maps.app.goo.gl/XT3cfnBiZa6WMh1r8"
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="map-placeholder glass-card map-link-card" 
-                    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textDecoration: 'none', cursor: 'pointer' }}
-                  >
-                    <MapPin size={24} className="map-pin-icon" style={{ color: 'var(--text-gold)' }} />
-                    <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('View Venue on Google Maps')}</p>
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('Click to open driving directions')}</span>
-                  </a>
-                </div>
+            {/* The Venue */}
+            <div className="details-card glass-panel">
+              <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+                <MapPin className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
+                <h2>{t('Venue')}</h2>
               </div>
+              <div className="venue-info">
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '8px' }}>{engagementLocation}</h3>
+                <p className="venue-desc" style={{ color: 'var(--text-secondary)', marginBottom: '24px' }}>
+                  {t('A beautifully decorated hall chosen for this special occasion, setting a warm and joyful ambiance for the ring ceremony.')}
+                </p>
+                <a 
+                  href="https://maps.app.goo.gl/XT3cfnBiZa6WMh1r8"
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="map-placeholder glass-card map-link-card" 
+                  style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '8px', textDecoration: 'none', cursor: 'pointer' }}
+                >
+                  <MapPin size={24} className="map-pin-icon" style={{ color: 'var(--text-gold)' }} />
+                  <p style={{ margin: '0', fontSize: '0.95rem', fontWeight: '600', color: 'var(--text-accent)' }}>{t('View Venue on Google Maps')}</p>
+                  <span style={{ fontSize: '0.8rem', color: 'var(--text-secondary)' }}>{t('Click to open driving directions')}</span>
+                </a>
+              </div>
+            </div>
+          </div>
 
-              {/* Dress Code */}
-              <div className="details-card glass-panel">
-                <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
-                  <Shirt className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
-                  <h2>{t('Dress Code')}</h2>
-                </div>
-                <div className="venue-info">
-                  <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.5rem', marginBottom: '8px' }}>{t('Festive Wear')}</h3>
-                  <p style={{ color: 'var(--text-secondary)', marginBottom: '16px' }}>
-                    {t('We would love for you to celebrate with us in elegant traditional attire. Kurtha for Men and boys, Saree for Women and Lehenga for Girls are recommended!')}
-                  </p>
-                  <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--text-gold)', fontWeight: '600' }}>
-                    {t('Please follow suggested colour palette below.')}
-                  </p>
-                  <div className="palette_cont">
-                    <img
-                    src={palatte} 
-                    alt="palette" 
-                    className="palette_img"/>
-                  </div>
-                </div>
+          {/* Stretched Full-Width Dress Code Section below both Event Flow & Venue */}
+          <div className="details-card glass-panel dress-code-stretched-card">
+            <div className="details-card-header" style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '24px' }}>
+              <Shirt className="details-header-icon" size={24} style={{ color: 'var(--text-gold)' }} />
+              <h2>{t('Dress Code')}</h2>
+            </div>
+            <div className="dress-code-content-grid">
+              <div>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', marginBottom: '12px' }}>{t('Festive Wear')}</h3>
+                <p style={{ color: 'var(--text-secondary)', marginBottom: '16px', lineHeight: '1.7', fontSize: '1rem' }}>
+                  {t('We would love for you to celebrate with us in elegant traditional attire. Kurtha for Men and boys, Saree for Women and Lehenga for Girls are recommended!')}
+                </p>
+                <p style={{ fontStyle: 'italic', fontSize: '0.9rem', color: 'var(--text-gold)', fontWeight: '600', margin: 0 }}>
+                  {t('Please try to follow suggested colour palette below.')}
+                </p>
+              </div>
+              <div className="palette_cont">
+                <img
+                  src={palatte} 
+                  alt="palette" 
+                  className="palette_img"
+                />
               </div>
             </div>
           </div>

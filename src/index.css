@@ -636,34 +636,99 @@ p {
 .schedule-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
+  position: relative;
+  padding: 4px 0;
+}
+
+.schedule-list::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  bottom: 16px;
+  left: 98px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--border-gold), var(--text-accent), rgba(212, 175, 55, 0.15));
+  border-radius: 2px;
+  z-index: 1;
 }
 
 .schedule-item {
   display: grid;
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: 85px 24px 1fr;
   gap: 16px;
-  align-items: start;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: var(--border-radius-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 2;
+}
+
+.schedule-item:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--border-gold);
+  transform: translateX(4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .schedule-time {
   font-family: var(--font-sans);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-accent);
-  letter-spacing: 1.5px;
-  padding-top: 4px;
+  letter-spacing: 0.5px;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 6px 10px;
+  border-radius: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.schedule-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--text-gold);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 10px var(--text-gold);
+  margin: 0 auto;
+  z-index: 3;
 }
 
 .schedule-info h4 {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  margin-bottom: 2px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.4;
 }
 
 .schedule-info p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .schedule-list::before {
+    left: 80px;
+  }
+
+  .schedule-item {
+    grid-template-columns: 75px 16px 1fr;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .schedule-time {
+    font-size: 0.72rem;
+    padding: 4px 6px;
+  }
 }
 
 .venue-info h3 {
@@ -1824,16 +1889,46 @@ p {
   border-color: var(--border-gold);
 }
 
+.dress-code-stretched-card {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.dress-code-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .dress-code-content-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
 .palette_cont {
-  position: relative;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .palette_img {
-  width: 60%;
-  height: 50%;
-  padding-top: 10px;
+  max-width: 380px;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
   display: block;
   object-fit: cover;
   border-radius: var(--border-radius-lg);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.palette_img:hover {
+  transform: scale(1.02);
 }
